@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Проверка</title>
+        <style>
+            .highlight {
+                background-color: yellow;
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <button id="цветка"> Менять</button>
+        <p id="txt">qwerty.</p>
+        <script>
+            // по айдишнику находит кнопку "Менять" и ставит на нее обработчик клика
+            $('#цветка').on('click', function() {
+                // все так же через айди находит "тхт" и переключаем ему класс "хайлайт", если класса нет то он добавляется, а если есть то убирается
+                $('#txt').toggleClass('highlight');
+            });
+        </script>
+    </body>
+</html>
